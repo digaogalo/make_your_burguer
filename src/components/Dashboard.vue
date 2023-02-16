@@ -1,5 +1,6 @@
 <template>
     <div id="burger-table">
+        <Message :msg="msg" v-show="msg"/>
         <div>
             <div id="burger-table-heading">
                 <div class="order-id">#:</div>
@@ -24,9 +25,10 @@
                     </ul>
                 </div>
                 <div>
-                    <select name="status" class="status">
+                    <select name="status" class="status"    
+                    @change="updatedBurger($event, burger.id)">
                         <option value="">Selecione</option>
-                        <option v-for="s in status" :key="s.id" value="s.tipo"  
+                        <option v-for="s in status" :key="s.id" :value="s.tipo"  
                         :selected="burger.status == s.tipo"> 
                             {{ s.tipo }}
                         </option>
@@ -43,14 +45,19 @@
 </template>
 
 <script>
+import Message from './Message.vue'
 export default {
     name: 'Dashboard',
     data() {
         return {
             burgers: null,
             burger_id: null,
-            status: []
+            status: [],
+            msg: null
         }
+    },
+    components: {
+        Message
     },
     methods: {
         async getPedidos() {
@@ -82,8 +89,32 @@ export default {
 
             const res = await req.json()
 
-            //msg
+              // colocar uma msg de sistema
+              this.msg = 'Pedido removido com sucesso'
+
+            // limpar msg
+            setTimeout(() => this.msg = '', 3000)
             this.getPedidos()
+        },
+        async updatedBurger(event, id) {
+
+            const option = event.target.value
+
+            const dataJson = JSON.stringify({ status: option})
+
+            const req = await fetch(`http://localhost:3000/burgers/${id}`, {
+                method: 'PATCH',
+                headers: {'Content-Type': "application/json"},
+                body: dataJson
+            })
+
+            const res = await req.json()
+
+              // colocar uma msg de sistema
+              this.msg = `Pedido Nº ${res.id} foi atualizado para ${res.status}`
+
+            // limpar msg
+              setTimeout(() => this.msg='', 3000)
         }
     },
     mounted() {
