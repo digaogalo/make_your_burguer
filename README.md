@@ -1,19 +1,8 @@
-# make_your_pizza
+## :pizza: Make you Pizza 
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+In this project I created a database to save all data like ```Id``` and ```type``` in backend. 
 
-### Compiles and minifies for production
-```
-npm run build
-```
+I use Vue,js is this application 
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Create a component tree 
