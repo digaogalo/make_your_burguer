@@ -105,5 +105,17 @@
       "tipo": "Finalizado"
     }
   ],
-  "burgers": []
+  "burgers": [
+    {
+      "nome": "Marcos",
+      "carne": "Baiana",
+      "pao": "Catupiry",
+      "opcionais": [
+        "Bacon",
+        "Salame"
+      ],
+      "status": "Solicitado",
+      "id": 1
+    }
+  ]
 }
