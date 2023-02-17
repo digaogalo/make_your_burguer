@@ -1,6 +1,6 @@
 <template>
     <div id="main-banner">
-        <h1>Make Your Buguer</h1>
+        <h1>Pizza Bellissimo</h1>
     </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
 
 <style scoped>
     #main-banner {
-        background-image: url('../../public/img/burger.jpg');
+        background-image: url('../../public/img/pizza.jpg');
         background-size: cover;
         height: 700px;
         display: flex;
@@ -25,7 +25,7 @@ export default {
         color: #fff;
         text-align: center;
         font-size: 60px;
-        background-color: #222;
+        background-color: transparent;
         padding: 20px 40px;
     }
 </style>

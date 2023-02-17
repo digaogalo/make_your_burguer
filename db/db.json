@@ -3,41 +3,65 @@
     "paes": [
       {
         "id": 1,
-        "tipo": "Italiano Branco"
+        "tipo": "Sem Borda"
       },
       {
         "id": 2,
-        "tipo": "3 Queijos"
+        "tipo": "Cheddar"
       },
       {
         "id": 3,
-        "tipo": "Parmesão e Orégano"
+        "tipo": "Catupiry"
       },
       {
         "id": 4,
-        "tipo": "Integral"
+        "tipo": "Chocolate Branco"
       },
       {
         "id": 5,
-        "tipo": "Australiano"
+        "tipo": "Chocolate Preto"
       }
     ],
     "carnes": [
       {
         "id": 1,
-        "tipo": "Maminha"
+        "tipo": "Alho e óleo"
       },
       {
         "id": 2,
-        "tipo": "Alcatra"
+        "tipo": "Americana"
       },
       {
         "id": 3,
-        "tipo": "Picanha"
+        "tipo": "Alcatra"
       },
       {
         "id": 4,
-        "tipo": "Veggie burger"
+        "tipo": "Bacon"
+      },
+      {
+        "id": 5,
+        "tipo": "Calabresa"
+      },
+      {
+        "id": 6,
+        "tipo": "Baiana"
+      },
+      {
+        "id": 7,
+        "tipo": "Brócolis c/ catupiry"
+      },
+      {
+        "id": 8,
+        "tipo": "Lombo"
+      },
+      {
+        "id": 9,
+        "tipo": "Oreo"
+      },
+      {
+        "id": 8,
+        "tipo": "Senção"
       }
     ],
     "opcionais": [
@@ -63,7 +87,7 @@
       },
       {
         "id": 6,
-        "tipo": "Pepino"
+        "tipo": "Calabresa"
       }
     ]
   },
@@ -81,40 +105,5 @@
       "tipo": "Finalizado"
     }
   ],
-  "burgers": [
-    {
-      "nome": "Lucas Miranda",
-      "carne": "Maminha",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Bacon",
-        "Salame"
-      ],
-      "status": "Pedido a caminho!",
-      "id": 1
-    },
-    {
-      "nome": "Carlos Carvalho",
-      "carne": "Maminha",
-      "pao": "Parmesão e Orégano",
-      "opcionais": [
-        "Salame",
-        "Cebola roxa"
-      ],
-      "status": "Pedido a caminho!",
-      "id": 3
-    },
-    {
-      "nome": "Marcos",
-      "carne": "Veggie burger",
-      "pao": "Integral",
-      "opcionais": [
-        "Pepino",
-        "Tomate",
-        "Cebola roxa"
-      ],
-      "status": "Pedido a caminho!",
-      "id": 4
-    }
-  ]
+  "burgers": []
 }

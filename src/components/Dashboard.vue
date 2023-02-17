@@ -5,8 +5,8 @@
             <div id="burger-table-heading">
                 <div class="order-id">#:</div>
                 <div>Cliente:</div>
-                <div>Pão:</div>
-                <div>Carne:</div>
+                <div>Borda:</div>
+                <div>Sabor:</div>
                 <div>Opcionais:</div>
                 <div>Ações:</div>
             </div>

@@ -10,32 +10,32 @@
                 placeholder="Digite o seu nome">
             </div>
             <div class="input-container">
-                <label for="pao">Escolha o pão: </label>
+                <label for="pao">Escolha a borda: </label>
                 <select name="pao" id="pao" v-model="pao">
-                    <option value="">Selecione seu pão</option>
+                    <option value="">Selecione sua borda</option>
                     <option v-for="pao in paes" :key="pao.id" :value="pao.tipo">    
                         {{ pao.tipo }}  
                     </option>
                 </select>
             </div>
             <div class="input-container">
-                <label for="carne">Escolha a carne: </label>
+                <label for="carne">Escolha o sabor: </label>
                 <select name="carne" id="carne" v-model="carne">
-                    <option value="">Selecione o tipo de carne</option>
+                    <option value="">Selecione o sabor</option>
                     <option v-for="carne in carnes" :key="carne.id" :value="carne.tipo">    
                         {{ carne.tipo }}    
                     </option>
                 </select>
             </div>
             <div id="opcionais-container" class="input-container">
-        <label id="opcionais-title" for="opcionais">Selecione os opcionais:</label>
+        <label id="opcionais-title" for="opcionais">Acrescente mais ingredientes:</label>
         <div class="checkbox-container" v-for="opcional in opcionaisdata" :key="opcional.id">
           <input type="checkbox" name="opcionais" v-model="opcionais" :value="opcional.tipo">
           <span>{{ opcional.tipo }}</span>
         </div>
       </div>
             <div class="input-container">
-                <input class="submit-btn" type="submit" value="Criar meu Burger">
+                <input class="submit-btn" type="submit" value="Criar minha pizza">
             </div>
         </form>
     </div>
